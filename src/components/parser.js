@@ -41,7 +41,7 @@ const toRecord = (title, path) => {
         resolve(documents)
 
       }
-    });
+    })
 
   })
 

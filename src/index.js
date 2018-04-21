@@ -8,7 +8,7 @@ const title = process.env.BOOK
 const PDF_PATH = './data/' + title
 
 //@todo implement promises to synchronise calls
-const records = toRecord(title, PDF_PATH)
+toRecord(title, PDF_PATH)
   .then(addToIndex)
   .then(console.debug)
   .then(() => {
