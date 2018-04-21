@@ -18,7 +18,7 @@
     "nodemon": "^1.17.3"
   },
   "scripts": {
-    "start": "nodemon src/index.js --exec babel-node --presets env",
+    "start": "babel-node src/index.js --presets env",
     "build": "babel src -d dist",
     "serve": "node dist/index.js"
   }
