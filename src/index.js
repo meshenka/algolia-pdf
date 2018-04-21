@@ -9,7 +9,10 @@ const PDF_PATH = './data/' + title
 
 //@todo implement promises to synchronise calls
 const records = toRecord(title, PDF_PATH)
-addToIndex(records)
+  .then(addToIndex)
+  .then(console.debug)
+  .then(() => {
+    console.log("DONE")
+  })
  
 
-console.log("DONE")
